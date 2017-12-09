@@ -1,0 +1,236 @@
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+body {
+	background: #f8fcf5;
+	background-image: url('img/Pizza11.jpg');		
+	background-size: 34%;
+	font-family: 'Indie Flower', cursive;
+	line-height: 190%;
+	text-align: center;
+	text-transform: uppercase;		
+	min-width:490px;
+}
+img {
+	max-width: 100%;
+}
+header {
+	margin: 0 0 0 0;
+	background: #e9fced;
+	height: 60px;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	opacity: 0.9;
+}
+.menu {
+	width: 100px;
+	height: 100%;
+	float: left;
+}
+#header-inner {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+#menu-icon {
+	margin-top: 10px;
+	width: 40px;
+	height: 34px;
+	display: none;
+}
+#header-inner .ul {
+	height: 60px;
+	margin: 0 auto; 
+	padding: 0;
+}
+
+.nav1 {
+	margin: 0 0 0 0;
+	padding: 0;
+	height: 60px;
+	position: relative;
+	left: px;
+	font-size: 120%;
+	top: 0;
+	
+}
+.nav1 ul {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	height: 60px;	
+}
+.nav1 ul li {
+	float: right;
+	display: block;
+	font-family: sans-serif;
+	height: 60px;
+	line-height: 60px;
+	text-align: left;
+
+	padding: 0 10px;
+	font-size: 110%;
+	transition: background .5s; 
+	font-weight: 700;
+}
+.nav2 ul{	
+	list-style: none;
+	float: right;
+	position: relative;
+	display: none;  
+}
+.nav1 ul li:hover, .nav2 ul li:hover {
+	background: #7bd3ee;
+	cursor: pointer; 
+	transition: background .5s; 
+}
+.nav1 ul li a, .nav2 ul li a {
+text-decoration: none;
+}
+.nav2 ul li:hover {
+	text-decoration: underline;
+}
+.clearfix {
+	clear: both;
+	padding: 1%;
+}
+
+h1 {
+	text-transform: none;
+	font-family: 'Tangerine', serif;
+	text-align: left;
+	font-size: 390%;
+	color: rgb(77, 11, 11);
+	position: absolute;
+	top: 100px;
+	left: 50px;
+}
+#pizzaid {
+	margin-top: 150px;
+}
+h2 {
+	font-family: 'Tangerine', serif;
+	text-transform: capitalize;
+	color: #1676ccfa;
+	font-size: 700%;
+}
+p {
+	font-family: ;
+	color: #000;
+}
+.pizza {	
+	max-height: 350px;
+	min-height: 350px;
+	max-width: 350px;
+	min-width: 350px;
+	
+	border-color: #f2f2f2;
+	border-style: solid;
+	border-width: 5px;	
+} 
+.section1 {
+	max-width: 350px;
+	margin: 2%;
+}
+.side {
+	min-height: 280px;
+	min-width: 280px;
+	max-height: 280px;
+	max-width: 280px;
+	border-color: #f2f2f2;
+	border-style: solid;
+	border-width: 5px;
+}
+.section2 {
+	margin: 1%;	
+}
+.drinks {
+	min-height: 280px;
+	max-height: 280px;
+	min-width: 280px;
+	max-width: 280px;
+	border-color: #f2f2f2;
+	border-style: solid;
+	border-width: 5px;
+}
+.section3 {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.center {
+	margin: 0 auto;
+	max-width: 100%;
+	font-size: 200%;
+}
+
+.section1, .section2, .section3 {
+	display: block;
+	float: left;
+}
+
+/*waypoints*/
+.os-animation{
+	opacity: 0;
+}
+.os-animation.animated{
+    opacity: 1;
+}
+
+@media screen and (max-width: 777px){
+header{
+	position: absolute;
+}
+#menu-icon {		
+	display: inline-block;
+	float: right;
+}	
+.nav1 ul li {
+	display: none;
+}
+.nav2 ul{
+		font-family: 'Timmana', sans-serif;
+		background-color: #57c4c7;
+		float: right;
+		width: 100px;
+		height: 150px;
+		font-size: 120%;
+		list-style: none;
+		line-height: 200%;
+		text-align: left;
+		padding: 20px;
+		border: 1px solid #fff;
+			
+}	
+h1 {	
+		min-width: 400px;
+		margin: 0 auto;		
+	}
+
+
+.section1, .section2, .section3 {
+		text-align: center;
+		max-width: 100%;
+		font-size: 100%;		
+		width: 100%;
+		;
+}	
+
+
+h2 {
+		font-size: 280%;
+		text-align: center;			
+	}
+}
+
+@media screen and (min-width: 777px) and (max-width: 1024px) {
+.nav2 ul {display: none;}  /* hide it on larger screens */
+}
+
+@media screen and (min-width: 735px) and (max-width: 900px){ 
+section2 {
+	position: relative;	
+}	
+
+}
